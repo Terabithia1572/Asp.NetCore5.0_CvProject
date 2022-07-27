@@ -14,6 +14,10 @@ namespace Asp.NetCore5._0_CvProject
             DataSet1TableAdapters.Tbl_HakkimdaTableAdapter dt = new DataSet1TableAdapters.Tbl_HakkimdaTableAdapter();
             Repeater1.DataSource = dt.HakkimdaListele();
             Repeater1.DataBind();
-        }
+
+            DataSet1TableAdapters.Tbl_DeneyimTableAdapter dt2 = new DataSet1TableAdapters.Tbl_DeneyimTableAdapter();
+            Repeater2.DataSource = dt2.DeneyimListesi();
+            Repeater2.DataBind();
+                }
     }
 }
