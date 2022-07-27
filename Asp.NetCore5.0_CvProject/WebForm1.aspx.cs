@@ -11,7 +11,9 @@ namespace Asp.NetCore5._0_CvProject
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            DataSet1TableAdapters.Tbl_HakkimdaTableAdapter dt = new DataSet1TableAdapters.Tbl_HakkimdaTableAdapter();
+            Repeater1.DataSource = dt.HakkimdaListele();
+            Repeater1.DataBind();
         }
     }
 }
