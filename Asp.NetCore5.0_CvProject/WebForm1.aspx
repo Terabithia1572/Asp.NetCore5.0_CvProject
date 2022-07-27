@@ -65,13 +65,19 @@
 
       <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
         <div class="my-auto">
-          <h1 class="mb-0">Yunus
-            <span class="text-primary">İNAN</span>
+          <h1 class="mb-0">
+        <asp:Label ID="Label1" runat="server" Text="Ad"></asp:Label>
+            <span class="text-primary">
+            <asp:Label ID="Label2" runat="server" Text="Soyad"></asp:Label></span>
           </h1>
-          <div class="subheading mb-5">3542 Berry Street · Cheyenne Wells, CO 80810 · (317) 585-8468 ·
-            <a href="mailto:name@email.com">name@email.com</a>
+          <div class="subheading mb-5">
+                <asp:Label ID="Label3" runat="server" Text="Adres"></asp:Label>
+              <asp:Label ID="Label4" runat="server" Text="Telefon"></asp:Label>
+            <a href="mailto:name@email.com">
+                    <asp:Label ID="Label5" runat="server" Text="Mail"></asp:Label></a>
           </div>
-          <p class="lead mb-5">I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p>
+          <p class="lead mb-5">
+                        <asp:Label ID="Label6" runat="server" Text="Hakkımda"></asp:Label></p>
           <div class="social-icons">
             <a href="#">
               <i class="fab fa-linkedin-in"></i>
