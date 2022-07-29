@@ -18,6 +18,10 @@ namespace Asp.NetCore5._0_CvProject
             DataSet1TableAdapters.Tbl_DeneyimTableAdapter dt2 = new DataSet1TableAdapters.Tbl_DeneyimTableAdapter();
             Repeater2.DataSource = dt2.DeneyimListesi();
             Repeater2.DataBind();
+
+            DataSet1TableAdapters.Tbl_EgitimTableAdapter dt3 = new DataSet1TableAdapters.Tbl_EgitimTableAdapter();
+            Repeater3.DataSource = dt3.EgitimListele();
+            Repeater3.DataBind();
                 }
     }
 }
