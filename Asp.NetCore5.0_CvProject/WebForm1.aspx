@@ -54,6 +54,9 @@
                     <a class="nav-link js-scroll-trigger" href="#interests">İlgi Alanlarım</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#conference">Konferanslar</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="#awards">Ödüllerim</a>
                 </li>
             </ul>
@@ -65,70 +68,76 @@
         <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
             <asp:Repeater ID="Repeater1" runat="server">
                 <ItemTemplate>
-                <div class="my-auto">
-                    <h1 class="mb-0">
-                        <asp:Label ID="Label1" runat="server" Text='<%# Eval("Ad") %>'></asp:Label>
-                        <span class="text-primary">
-                            <asp:Label ID="Label2" runat="server" Text='<%# Eval("Soyad") %>'></asp:Label></span>
-                    </h1>
-                    <div class="subheading mb-5">
-                        <p>Adres: <asp:Label ID="Label3" runat="server" Text='<%# Eval("Adres") %>'></asp:Label></p> 
-                        <p>Telefon: <asp:Label ID="Label4" runat="server" Text='<%# Eval("Telefon") %>' style="color:coral"></asp:Label> </p>
-                        
-                        <p>Mail: <a href="mailto:name@email.com">
-                            <asp:Label ID="Label5" runat="server" Text='<%# Eval("Mail") %>'></asp:Label>
-
-                        </a>
+                    <div class="my-auto">
+                        <h1 class="mb-0">
+                            <asp:Label ID="Label1" runat="server" Text='<%# Eval("Ad") %>'></asp:Label>
+                            <span class="text-primary">
+                                <asp:Label ID="Label2" runat="server" Text='<%# Eval("Soyad") %>'></asp:Label></span>
+                        </h1>
+                        <div class="subheading mb-5">
+                            <p>Adres:
+                                <asp:Label ID="Label3" runat="server" Text='<%# Eval("Adres") %>'></asp:Label></p>
+                            <p>Telefon:
+                                <asp:Label ID="Label4" runat="server" Text='<%# Eval("Telefon") %>' Style="color: coral"></asp:Label>
                             </p>
+
+                            <p>
+                                Mail: <a href="mailto:name@email.com">
+                                    <asp:Label ID="Label5" runat="server" Text='<%# Eval("Mail") %>'></asp:Label>
+
+                                </a>
+                            </p>
+                        </div>
+                        <p class="lead mb-5">
+                            <asp:Label ID="Label6" runat="server" Text='<%# Eval("Hakkimda") %>'></asp:Label>
+                        </p>
+                        <div class="social-icons">
+                            <a href="#">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </div>
                     </div>
-                    <p class="lead mb-5">
-                        <asp:Label ID="Label6" runat="server" Text='<%# Eval("Hakkimda") %>'></asp:Label>
-                    </p>
-                    <div class="social-icons">
-                        <a href="#">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                    </div>
-                </div>
-                    </ItemTemplate>
+                </ItemTemplate>
             </asp:Repeater>
         </section>
 
         <hr class="m-0">
 
         <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
-             <h2 class="mb-5">Deneyimlerim</h2>
+            <h2 class="mb-5">Deneyimlerim</h2>
             <asp:Repeater ID="Repeater2" runat="server">
                 <ItemTemplate>
-            <div class="my-auto">
-               
+                    <div class="my-auto">
 
-                <div class="resume-item d-flex flex-column flex-md-row mb-5">
-                    <div class="resume-content mr-auto">
-                        <h3 class="mb-0">
-                            <asp:Label ID="Label7" runat="server" Text='<%# Eval("Baslik") %>'></asp:Label></h3>
-                        <div class="subheading mb-3">
-                            <asp:Label ID="Label8" runat="server" Text='<%# Eval("AltBaslik") %>'></asp:Label></div>
-                        <p>
-                            <asp:Label ID="Label9" runat="server" Text='<%# Eval("Aciklama") %>'></asp:Label></p>
+
+                        <div class="resume-item d-flex flex-column flex-md-row mb-5">
+                            <div class="resume-content mr-auto">
+                                <h3 class="mb-0">
+                                    <asp:Label ID="Label7" runat="server" Text='<%# Eval("Baslik") %>'></asp:Label></h3>
+                                <div class="subheading mb-3">
+                                    <asp:Label ID="Label8" runat="server" Text='<%# Eval("AltBaslik") %>'></asp:Label>
+                                </div>
+                                <p>
+                                    <asp:Label ID="Label9" runat="server" Text='<%# Eval("Aciklama") %>'></asp:Label>
+                                </p>
+                            </div>
+                            <div class="resume-date text-md-right">
+                                <span class="text-primary">
+                                    <asp:Label ID="Label10" runat="server" Text='<%# Eval("Tarih") %>'></asp:Label></span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="resume-date text-md-right">
-                        <span class="text-primary">
-                            <asp:Label ID="Label10" runat="server" Text='<%# Eval("Tarih") %>'></asp:Label></span>
-                    </div>
-                </div>
-            </div>
-                    </ItemTemplate>
-                </asp:Repeater>
+                </ItemTemplate>
+            </asp:Repeater>
         </section>
 
         <hr class="m-0">
@@ -139,26 +148,29 @@
                 <asp:Repeater ID="Repeater3" runat="server">
                     <ItemTemplate>
 
-                <div class="resume-item d-flex flex-column flex-md-row mb-5">
-                    <div class="resume-content mr-auto">
-                        <h3 class="mb-0">
-                            <asp:Label ID="Label11" runat="server" Text='<%# Eval("Baslik") %>'></asp:Label></h3>
-                        <div class="subheading mb-3">
-                            <asp:Label ID="Label12" runat="server" Text='<%# Eval("AltBaslik") %>'></asp:Label></div>
-                        <div>
-                            <asp:Label ID="Label13" runat="server" Text='<%# Eval("Aciklama") %>'></asp:Label></div>
-                        <p>
-                            <asp:Label ID="Label14" runat="server" Text='<%# Eval("NotOrtalamasi") %>'></asp:Label></p>
-                    </div>
-                    <div class="resume-date text-md-right">
-                        <span class="text-primary">
-                            <asp:Label ID="Label15" runat="server" Text='<%# Eval("Tarih") %>'></asp:Label></span>
-                    </div>
-                </div>
-                        </ItemTemplate>
-                     </asp:Repeater>
+                        <div class="resume-item d-flex flex-column flex-md-row mb-5">
+                            <div class="resume-content mr-auto">
+                                <h3 class="mb-0">
+                                    <asp:Label ID="Label11" runat="server" Text='<%# Eval("Baslik") %>'></asp:Label></h3>
+                                <div class="subheading mb-3">
+                                    <asp:Label ID="Label12" runat="server" Text='<%# Eval("AltBaslik") %>'></asp:Label>
+                                </div>
+                                <div>
+                                    <asp:Label ID="Label13" runat="server" Text='<%# Eval("Aciklama") %>'></asp:Label>
+                                </div>
+                                <p>
+                                    <asp:Label ID="Label14" runat="server" Text='<%# Eval("NotOrtalamasi") %>'></asp:Label>
+                                </p>
+                            </div>
+                            <div class="resume-date text-md-right">
+                                <span class="text-primary">
+                                    <asp:Label ID="Label15" runat="server" Text='<%# Eval("Tarih") %>'></asp:Label></span>
+                            </div>
+                        </div>
+                    </ItemTemplate>
+                </asp:Repeater>
             </div>
-           
+
         </section>
 
         <hr class="m-0">
@@ -233,10 +245,28 @@
                 <asp:Repeater ID="Repeater4" runat="server">
                     <ItemTemplate>
                         <p class="mb-0">
-                    <asp:Label ID="Label16" runat="server" Text='<%# Eval("Hobilerim") %>'></asp:Label>
+                            <asp:Label ID="Label16" runat="server" Text='<%# Eval("Hobilerim") %>'></asp:Label>
                         </p>
-                        </ItemTemplate>
+                    </ItemTemplate>
                 </asp:Repeater>
+            </div>
+        </section>
+
+        <hr class="m-0">
+
+        <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="conference">
+            <div class="my-auto">
+                <h2 class="mb-5">Konferanslar</h2>
+                <ul class="fa-ul mb-0">
+                    <asp:Repeater ID="Repeater6" runat="server">
+                        <ItemTemplate>
+                            <li>
+                                <i class="fa-li fa fa-trophy text-warning"></i>
+                                <asp:Label ID="Label17" runat="server" Text='<%# Eval("Konferanslar") %>'></asp:Label>
+                            </li>
+                        </ItemTemplate>
+                    </asp:Repeater>
+                </ul>
             </div>
 
         </section>
@@ -245,34 +275,19 @@
 
         <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
             <div class="my-auto">
-                <h2 class="mb-5">Awards &amp; Certifications</h2>
+                <h2 class="mb-5">Ödüllerim &amp; Sertifikalarım</h2>
                 <ul class="fa-ul mb-0">
-                    <li>
-                        <i class="fa-li fa fa-trophy text-warning"></i>
-                        Google Analytics Certified Developer</li>
-                    <li>
-                        <i class="fa-li fa fa-trophy text-warning"></i>
-                        Mobile Web Specialist - Google Certification</li>
-                    <li>
-                        <i class="fa-li fa fa-trophy text-warning"></i>
-                        1<sup>st</sup>
-                        Place - University of Colorado Boulder - Emerging Tech Competition 2009</li>
-                    <li>
-                        <i class="fa-li fa fa-trophy text-warning"></i>
-                        1<sup>st</sup>
-                        Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)</li>
-                    <li>
-                        <i class="fa-li fa fa-trophy text-warning"></i>
-                        2<sup>nd</sup>
-                        Place - University of Colorado Boulder - Emerging Tech Competition 2008</li>
-                    <li>
-                        <i class="fa-li fa fa-trophy text-warning"></i>
-                        1<sup>st</sup>
-                        Place - James Buchanan High School - Hackathon 2006</li>
-                    <li>
-                        <i class="fa-li fa fa-trophy text-warning"></i>
-                        3<sup>rd</sup>
-                        Place - James Buchanan High School - Hackathon 2005</li>
+                    <asp:Repeater ID="Repeater5" runat="server">
+                        <ItemTemplate>
+                            <li>
+
+                                <i class="fa-li fa fa-trophy text-warning"></i>
+                                <asp:Label ID="Label17" runat="server" Text='<%# Eval("Odullerim") %>'></asp:Label>
+
+
+                            </li>
+                        </ItemTemplate>
+                    </asp:Repeater>
                 </ul>
             </div>
         </section>

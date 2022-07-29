@@ -25,6 +25,14 @@ namespace Asp.NetCore5._0_CvProject
             DataSet1TableAdapters.Tbl_HobilerimTableAdapter dt4 = new DataSet1TableAdapters.Tbl_HobilerimTableAdapter();
             Repeater4.DataSource = dt4.HobileriListele();
             Repeater4.DataBind();
+
+            DataSet1TableAdapters.Tbl_OdullerimTableAdapter dt5 = new DataSet1TableAdapters.Tbl_OdullerimTableAdapter();
+            Repeater5.DataSource = dt5.OdullerimListele();
+            Repeater5.DataBind();
+
+            DataSet1TableAdapters.Tbl_KonferanslarTableAdapter dt6 = new DataSet1TableAdapters.Tbl_KonferanslarTableAdapter();
+            Repeater6.DataSource = dt6.KonferansListele();
+            Repeater6.DataBind();
                 }
     }
 }
