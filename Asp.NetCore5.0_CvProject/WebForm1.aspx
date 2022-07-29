@@ -200,41 +200,37 @@
                         <i class="fab fa-node-js"></i>
                     </li>
                     <li class="list-inline-item">
-                        <i class="fab fa-sass"></i>
+                        <i class="fab fa-java"></i>
                     </li>
                     <li class="list-inline-item">
-                        <i class="fab fa-less"></i>
+                        <i class="fab fa-chrome"></i>
                     </li>
                     <li class="list-inline-item">
                         <i class="fab fa-wordpress"></i>
                     </li>
                     <li class="list-inline-item">
-                        <i class="fab fa-gulp"></i>
+                        <i class="fab fa-windows"></i>
                     </li>
                     <li class="list-inline-item">
-                        <i class="fab fa-grunt"></i>
+                        <i class="fab fa-linux"></i>
                     </li>
                     <li class="list-inline-item">
-                        <i class="fab fa-npm"></i>
+                        <i class="fab fa-android"></i>
                     </li>
                 </ul>
 
-                <div class="subheading mb-3">Workflow</div>
+                <div class="subheading mb-3">İş Akışı</div>
+                <asp:Repeater ID="Repeater7" runat="server">
+                    <ItemTemplate>
                 <ul class="fa-ul mb-0">
                     <li>
                         <i class="fa-li fa fa-check"></i>
-                        Mobile-First, Responsive Design</li>
-                    <li>
-                        <i class="fa-li fa fa-check"></i>
-                        Cross Browser Testing &amp; Debugging</li>
-                    <li>
-                        <i class="fa-li fa fa-check"></i>
-                        Cross Functional Teams</li>
-                    <li>
-                        <i class="fa-li fa fa-check"></i>
-                        Agile Development &amp; Scrum</li>
+                        <asp:Label ID="Label18" runat="server" Text='<%# Eval("Yetenekler") %>'></asp:Label> </li>                  
                 </ul>
-            </div>
+                        </ItemTemplate>
+                   </asp:Repeater>
+            </div> 
+            
         </section>
 
         <hr class="m-0">

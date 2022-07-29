@@ -33,6 +33,10 @@ namespace Asp.NetCore5._0_CvProject
             DataSet1TableAdapters.Tbl_KonferanslarTableAdapter dt6 = new DataSet1TableAdapters.Tbl_KonferanslarTableAdapter();
             Repeater6.DataSource = dt6.KonferansListele();
             Repeater6.DataBind();
+
+            DataSet1TableAdapters.Tbl_YeteneklerimTableAdapter dt7 = new DataSet1TableAdapters.Tbl_YeteneklerimTableAdapter();
+            Repeater7.DataSource = dt7.YetenekListele();
+            Repeater7.DataBind();
                 }
     }
 }
