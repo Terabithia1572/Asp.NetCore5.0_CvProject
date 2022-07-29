@@ -22,6 +22,9 @@ namespace Asp.NetCore5._0_CvProject
             DataSet1TableAdapters.Tbl_EgitimTableAdapter dt3 = new DataSet1TableAdapters.Tbl_EgitimTableAdapter();
             Repeater3.DataSource = dt3.EgitimListele();
             Repeater3.DataBind();
+            DataSet1TableAdapters.Tbl_HobilerimTableAdapter dt4 = new DataSet1TableAdapters.Tbl_HobilerimTableAdapter();
+            Repeater4.DataSource = dt4.HobileriListele();
+            Repeater4.DataBind();
                 }
     }
 }
