@@ -35,11 +35,11 @@
                         </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="AdminDeneyimler.aspx">
                         <i class="glyphicon glyphicon-briefcase"></i>
                         Deneyimlerim
                         </a>
-                    <a href="AdminDeneyimler.aspx">
+                    <a href="#">
                         <i class="glyphicon glyphicon-education"></i>
                         Eğitim Hayatım
                         </a>

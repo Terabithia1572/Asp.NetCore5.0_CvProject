@@ -4,6 +4,8 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
 
+    <form id="Form1" runat="server">
+        
     <table class="table table-bordered">
         <tr>
             <th>ID</th>
@@ -25,7 +27,8 @@
                         <td><%# Eval("Aciklama") %></td>
                         <td><%# Eval("Tarih") %></td>
                         <td>
-                            <asp:HyperLink NavigateUrl='<%# "AdminDeneyimSil.aspxx"+ Eval("ID") %>' ID="HyperLink1" runat="server" CssClass="btn btn-danger">Sil</asp:HyperLink>
+                            <asp:HyperLink NavigateUrl='<%# "AdminDeneyimSil.aspx"+ Eval("ID") %>' ID="HyperLink1" runat="server" CssClass="btn btn-danger">Sil</asp:HyperLink>
+                            <br />
                             <asp:HyperLink NavigateUrl='<%# "AdminDeneyimGuncelle.aspx"+Eval("ID") %>' ID="HyperLink2" runat="server" CssClass="btn btn-success">Güncelle</asp:HyperLink>
                         </td>
                     </tr>
@@ -35,5 +38,8 @@
             </asp:Repeater>
         </tbody>
     </table>
+        <asp:HyperLink NavigateUrl="~/AdminDeneyimEkle.aspx" ID="HyperLink3" runat="server" CssClass="btn btn-info">Deneyim Ekle</asp:HyperLink>
+
+    </form>
 
 </asp:Content>
