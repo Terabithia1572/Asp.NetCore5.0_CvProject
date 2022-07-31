@@ -11,6 +11,9 @@ namespace Asp.NetCore5._0_CvProject
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            DataSet1TableAdapters.Tbl_DeneyimTableAdapter dt = new DataSet1TableAdapters.Tbl_DeneyimTableAdapter();
+            Repeater1.DataSource = dt.DeneyimListesi();
+            Repeater1.DataBind();
 
         }
     }

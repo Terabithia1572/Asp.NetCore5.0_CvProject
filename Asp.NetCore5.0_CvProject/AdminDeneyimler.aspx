@@ -18,11 +18,11 @@
 
                 <ItemTemplate>
                     <tr>
-                        <td>1</td>
-                        <td>Pamukkale Üniversitesi</td>
-                        <td>Test</td>
-                        <td>Deneme</td>
-                        <td>Haziran 2022</td>
+                        <td><%# Eval("ID") %></td>
+                        <td><%# Eval("Baslik") %></td>
+                        <td><%# Eval("AltBaslik") %></td>
+                        <td><%# Eval("Aciklama") %></td>
+                        <td><%# Eval("Tarih") %></td>
                     </tr>
                 
 
