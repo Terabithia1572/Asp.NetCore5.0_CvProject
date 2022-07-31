@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AdminDeneyimEkle.aspx" />
+    <Content Include="AdminDeneyimGuncelle.aspx" />
     <Content Include="AdminDeneyimler.aspx" />
     <Content Include="AdminDeneyimSil.aspx" />
     <Content Include="AdminDosyalar\bootstrap-3.3.7\dist\css\bootstrap-theme.css" />
@@ -1747,6 +1748,13 @@
     </Compile>
     <Compile Include="AdminDeneyimEkle.aspx.designer.cs">
       <DependentUpon>AdminDeneyimEkle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminDeneyimGuncelle.aspx.cs">
+      <DependentUpon>AdminDeneyimGuncelle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminDeneyimGuncelle.aspx.designer.cs">
+      <DependentUpon>AdminDeneyimGuncelle.aspx</DependentUpon>
     </Compile>
     <Compile Include="AdminDeneyimler.aspx.cs">
       <DependentUpon>AdminDeneyimler.aspx</DependentUpon>

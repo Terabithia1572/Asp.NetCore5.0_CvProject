@@ -29,7 +29,7 @@
                         <td>
                             <asp:HyperLink NavigateUrl='<%#"AdminDeneyimSil.aspx?ID="+ Eval("ID") %>' ID="HyperLink1" runat="server" CssClass="btn btn-danger">Sil</asp:HyperLink>
                             <br />
-                            <asp:HyperLink NavigateUrl='<%# "AdminDeneyimGuncelle.aspx?ID="+Eval("ID") %>' ID="HyperLink2" runat="server" CssClass="btn btn-success">Güncelle</asp:HyperLink>
+                            <asp:HyperLink NavigateUrl='<%#"AdminDeneyimGuncelle.aspx?ID="+ Eval("ID") %>' ID="HyperLink2" runat="server" CssClass="btn btn-success">Güncelle</asp:HyperLink>
                         </td>
                     </tr>
                 
