@@ -11,6 +11,7 @@
             <th>Alt Başlık</th>
             <th>Açıklama</th>
             <th>Tarih</th>
+            <th>İşlemler</th>
 
         </tr>
         <tbody>
@@ -23,6 +24,10 @@
                         <td><%# Eval("AltBaslik") %></td>
                         <td><%# Eval("Aciklama") %></td>
                         <td><%# Eval("Tarih") %></td>
+                        <td>
+                            <asp:HyperLink NavigateUrl='<%# "AdminDeneyimSil.aspxx"+ Eval("ID") %>' ID="HyperLink1" runat="server" CssClass="btn btn-danger">Sil</asp:HyperLink>
+                            <asp:HyperLink NavigateUrl='<%# "AdminDeneyimGuncelle.aspx"+Eval("ID") %>' ID="HyperLink2" runat="server" CssClass="btn btn-success">Güncelle</asp:HyperLink>
+                        </td>
                     </tr>
                 
 
