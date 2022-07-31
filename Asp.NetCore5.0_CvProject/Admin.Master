@@ -29,7 +29,7 @@
 
             <ul class="list-unstyled components">
                 <li class="active">
-                    <a href="#homeSubmenu">
+                    <a href="Hakkimda.aspx">
                         <i class="glyphicon glyphicon-home"></i>
                         Hakkımda
                         </a>
@@ -39,7 +39,7 @@
                         <i class="glyphicon glyphicon-briefcase"></i>
                         Deneyimlerim
                         </a>
-                    <a href="#pageSubmenu">
+                    <a href="AdminDeneyimler.aspx">
                         <i class="glyphicon glyphicon-education"></i>
                         Eğitim Hayatım
                         </a>
