@@ -13,5 +13,12 @@ namespace Asp.NetCore5._0_CvProject
         {
 
         }
+
+        protected void btn_Ekle_Click(object sender, EventArgs e)
+        {
+            DataSet1TableAdapters.Tbl_EgitimTableAdapter dt = new DataSet1TableAdapters.Tbl_EgitimTableAdapter();
+            dt.EgitimEkle(tx_Baslik.Text, tx_AltBaslik.Text, tx_Aciklama.Text, tx_NotOrtalamasi.Text, tx_Tarih.Text);
+            Response.Redirect("AdminEgitimler.aspx");
+        }
     }
 }

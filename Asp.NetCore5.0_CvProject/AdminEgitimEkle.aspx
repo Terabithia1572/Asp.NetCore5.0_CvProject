@@ -31,7 +31,7 @@
                  <asp:TextBox ID="tx_Tarih" runat="server" CssClass="form-control"></asp:TextBox>
             </div>
             <br />
-            <asp:Button ID="btn_Ekle" runat="server" CssClass="btn btn-success" Height="40px" Width="80px" Text="Ekle" />
+            <asp:Button ID="btn_Ekle" runat="server" CssClass="btn btn-success" Height="40px" Width="80px" Text="Ekle" OnClick="btn_Ekle_Click" />
         </div>
     </form>
 
