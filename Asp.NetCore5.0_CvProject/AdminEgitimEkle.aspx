@@ -18,7 +18,7 @@
             <br />
             <div>
                 <asp:Label ID="Label3" runat="server" Text="Açıklama"></asp:Label>
-                 <asp:TextBox ID="tx_Aciklama" runat="server" CssClass="form-control"></asp:TextBox>
+                 <asp:TextBox ID="tx_Aciklama" runat="server" CssClass="form-control" Height="100px" TextMode="MultiLine"></asp:TextBox>
             </div>
             <br />
             <div>
