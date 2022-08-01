@@ -338,6 +338,7 @@
     <Content Include="AdminDosyalar\StyleSheet2.css" />
     <Content Include="AdminEgitimEkle.aspx" />
     <Content Include="AdminEgitimler.aspx" />
+    <Content Include="AdminEgitimSil.aspx" />
     <Content Include="Dosyalar\css\resume.css" />
     <Content Include="Dosyalar\css\resume.min.css" />
     <Content Include="Dosyalar\gulpfile.js" />
@@ -1785,6 +1786,13 @@
     </Compile>
     <Compile Include="AdminEgitimler.aspx.designer.cs">
       <DependentUpon>AdminEgitimler.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminEgitimSil.aspx.cs">
+      <DependentUpon>AdminEgitimSil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminEgitimSil.aspx.designer.cs">
+      <DependentUpon>AdminEgitimSil.aspx</DependentUpon>
     </Compile>
     <Compile Include="DataSet1.Designer.cs">
       <AutoGen>True</AutoGen>
