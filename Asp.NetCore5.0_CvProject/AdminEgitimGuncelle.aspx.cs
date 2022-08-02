@@ -11,6 +11,15 @@ namespace Asp.NetCore5._0_CvProject
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            int x = Convert.ToInt16(Request.QueryString["ID"]);
+            DataSet1TableAdapters.Tbl_EgitimTableAdapter dt = new DataSet1TableAdapters.Tbl_EgitimTableAdapter();
+            tx_ID.Text = x.ToString();
+            tx_ID.Enabled = false;
+            tx_Baslik.Text = dt.EgitimGetir(Convert.ToInt16(x))[0].Baslik;
+            tx_AltBaslik.Text = dt.EgitimGetir(Convert.ToInt16(x))[0].AltBaslik;
+            tx_Aciklama.Text = dt.EgitimGetir(Convert.ToInt16(x))[0].Aciklama;
+            tx_NotOrtalamasi.Text = dt.EgitimGetir(Convert.ToInt16(x))[0].NotOrtalamasi;
+            tx_Tarih.Text = dt.EgitimGetir(Convert.ToInt16(x))[0].Tarih;
 
         }
     }
