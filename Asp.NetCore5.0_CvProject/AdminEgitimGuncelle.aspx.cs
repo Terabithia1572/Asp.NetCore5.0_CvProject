@@ -22,5 +22,12 @@ namespace Asp.NetCore5._0_CvProject
             tx_Tarih.Text = dt.EgitimGetir(Convert.ToInt16(x))[0].Tarih;
 
         }
+
+        protected void btn_Guncelle_Click(object sender, EventArgs e)
+        {
+            DataSet1TableAdapters.Tbl_EgitimTableAdapter dt1 = new DataSet1TableAdapters.Tbl_EgitimTableAdapter();
+            dt1.EgitimGuncelle(tx_Baslik.Text, tx_AltBaslik.Text, tx_Aciklama.Text, tx_NotOrtalamasi.Text, tx_Tarih.Text,Convert.ToInt16(tx_ID.Text));
+            Response.Redirect("AdminEgitimler.aspx");
+        }
     }
 }

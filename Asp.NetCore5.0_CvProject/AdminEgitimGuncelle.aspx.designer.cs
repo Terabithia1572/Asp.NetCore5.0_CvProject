@@ -121,5 +121,14 @@ namespace Asp.NetCore5._0_CvProject
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox tx_Tarih;
+
+        /// <summary>
+        /// btn_Guncelle control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btn_Guncelle;
     }
 }
