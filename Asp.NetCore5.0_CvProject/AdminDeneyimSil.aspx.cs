@@ -12,9 +12,11 @@ namespace Asp.NetCore5._0_CvProject
         protected void Page_Load(object sender, EventArgs e)
         {
             int x = Convert.ToInt16(Request.QueryString["ID"]);
+           
             DataSet1TableAdapters.Tbl_DeneyimTableAdapter dt = new DataSet1TableAdapters.Tbl_DeneyimTableAdapter();
             dt.DeneyimSil(Convert.ToInt16(x));
             Response.Redirect("AdminDeneyimler.aspx");
+            
         }
     }
 }

@@ -11,10 +11,14 @@ namespace Asp.NetCore5._0_CvProject
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            
             int x = Convert.ToInt16(Request.QueryString["ID"]);
-            DataSet1TableAdapters.Tbl_EgitimTableAdapter dt = new DataSet1TableAdapters.Tbl_EgitimTableAdapter();
-            dt.EgitimSil(Convert.ToInt16(x));
-            Response.Redirect("AdminEgitimler.aspx");
+            if (Page.IsPostBack == false)
+            {
+                DataSet1TableAdapters.Tbl_EgitimTableAdapter dt = new DataSet1TableAdapters.Tbl_EgitimTableAdapter();
+                dt.EgitimSil(Convert.ToInt16(x));
+                Response.Redirect("AdminEgitimler.aspx");
+            }
 
         }
     }
