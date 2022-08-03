@@ -22,5 +22,14 @@ namespace Asp.NetCore5._0_CvProject
             }
 
         }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            DataSet1TableAdapters.Tbl_YeteneklerimTableAdapter dt = new DataSet1TableAdapters.Tbl_YeteneklerimTableAdapter();
+            dt.YetenekGuncelle(tx_Yetenekler.Text,Convert.ToInt16(tx_ID.Text));
+
+            Response.Redirect("AdminYetenekler.aspx");
+
+        }
     }
 }

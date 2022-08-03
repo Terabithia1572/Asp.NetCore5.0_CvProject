@@ -15,6 +15,6 @@
                 <asp:TextBox ID="tx_Yetenekler" runat="server" CssClass="form-control"></asp:TextBox>
             </div>
         </div>
-        <asp:Button ID="Button1" runat="server" Text="Güncelle"  CssClass="btn btn-primary"/>
+        <asp:Button ID="Button1" runat="server" Text="Güncelle"  CssClass="btn btn-primary" OnClick="Button1_Click"/>
     </form>
 </asp:Content>
