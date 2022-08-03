@@ -340,6 +340,7 @@
     <Content Include="AdminEgitimGuncelle.aspx" />
     <Content Include="AdminEgitimler.aspx" />
     <Content Include="AdminEgitimSil.aspx" />
+    <Content Include="AdminYetenekEkle.aspx" />
     <Content Include="AdminYetenekler.aspx" />
     <Content Include="Dosyalar\css\resume.css" />
     <Content Include="Dosyalar\css\resume.min.css" />
@@ -1802,6 +1803,13 @@
     </Compile>
     <Compile Include="AdminEgitimSil.aspx.designer.cs">
       <DependentUpon>AdminEgitimSil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminYetenekEkle.aspx.cs">
+      <DependentUpon>AdminYetenekEkle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminYetenekEkle.aspx.designer.cs">
+      <DependentUpon>AdminYetenekEkle.aspx</DependentUpon>
     </Compile>
     <Compile Include="AdminYetenekler.aspx.cs">
       <DependentUpon>AdminYetenekler.aspx</DependentUpon>
