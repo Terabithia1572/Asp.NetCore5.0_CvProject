@@ -1746,6 +1746,8 @@
     <Content Include="Hakkimda.aspx" />
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
+    <Content Include="YeteneklerGuncelle.aspx" />
+    <Content Include="YeteneklerSil.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AdminDeneyimEkle.aspx.cs">
@@ -1849,6 +1851,20 @@
     </Compile>
     <Compile Include="WebForm1.aspx.designer.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="YeteneklerGuncelle.aspx.cs">
+      <DependentUpon>YeteneklerGuncelle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="YeteneklerGuncelle.aspx.designer.cs">
+      <DependentUpon>YeteneklerGuncelle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="YeteneklerSil.aspx.cs">
+      <DependentUpon>YeteneklerSil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="YeteneklerSil.aspx.designer.cs">
+      <DependentUpon>YeteneklerSil.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

@@ -10,7 +10,7 @@
             </div>
         </div>
 
-        <asp:Button ID="btn_Ekle" runat="server" Text="Yetenek Ekle" />
+        <asp:Button ID="btn_Ekle" runat="server" Text="Yetenek Ekle" CssClass="btn btn-success" OnClick="btn_Ekle_Click" />
 
     </form>
 </asp:Content>
