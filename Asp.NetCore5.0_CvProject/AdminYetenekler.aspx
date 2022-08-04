@@ -18,8 +18,8 @@
                     <td><%# Eval("ID") %></td>
                     <td><%# Eval("Yetenekler") %></td>
                     <td>
-                        <asp:HyperLink NavigateUrl='<%# "YeteneklerSil.aspx?ID=" + Eval("ID") %>' ID="HyperLink1" runat="server" CssClass="btn btn-danger">Sil</asp:HyperLink>
-                        <asp:HyperLink NavigateUrl='<%# "YeteneklerGuncelle.aspx?ID=" + Eval("ID") %>' ID="HyperLink2" runat="server" CssClass="btn btn-primary" style="margin-top:5px">Güncelle</asp:HyperLink>
+                        <asp:HyperLink NavigateUrl='<%# "AdminYeteneklerSil.aspx?ID=" + Eval("ID") %>' ID="HyperLink1" runat="server" CssClass="btn btn-danger">Sil</asp:HyperLink>
+                        <asp:HyperLink NavigateUrl='<%# "AdminYeteneklerGuncelle.aspx?ID=" + Eval("ID") %>' ID="HyperLink2" runat="server" CssClass="btn btn-primary" style="margin-top:5px">Güncelle</asp:HyperLink>
 
                     </td>
                 </tr>

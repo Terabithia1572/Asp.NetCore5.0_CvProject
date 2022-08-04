@@ -13,5 +13,12 @@ namespace Asp.NetCore5._0_CvProject
         {
 
         }
+
+        protected void btn_Ekle_Click(object sender, EventArgs e)
+        {
+            DataSet1TableAdapters.Tbl_HobilerimTableAdapter dt = new DataSet1TableAdapters.Tbl_HobilerimTableAdapter();
+            dt.HobiEkle(tx_Hobilerim.Text);
+            Response.Redirect("AdminHobilerim.aspx");
+        }
     }
 }

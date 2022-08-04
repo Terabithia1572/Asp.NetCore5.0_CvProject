@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin.Master" AutoEventWireup="true" CodeBehind="Hobilerim.aspx.cs" Inherits="Asp.NetCore5._0_CvProject.Hobilerim" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin.Master" AutoEventWireup="true" CodeBehind="AdminHobilerim.aspx.cs" Inherits="Asp.NetCore5._0_CvProject.Hobilerim" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 </asp:Content>
@@ -18,8 +18,8 @@
                             <td><%# Eval("ID") %></td>
                             <td><%# Eval("Hobilerim") %></td>
                             <td>
-                                <asp:HyperLink NavigateUrl='<%# "HobiSil.aspx?ID=" + Eval("ID") %>' ID="HyperLink2" runat="server" CssClass="btn btn-danger">Sil</asp:HyperLink>
-                                <asp:HyperLink NavigateUrl='<%# "HobiGuncelle.aspx?ID="+Eval("ID") %>' ID="HyperLink1" runat="server" CssClass="btn btn-primary">Güncelle</asp:HyperLink>
+                                <asp:HyperLink NavigateUrl='<%# "AdminHobiSil.aspx?ID=" + Eval("ID") %>' ID="HyperLink2" runat="server" CssClass="btn btn-danger">Sil</asp:HyperLink>
+                                <asp:HyperLink NavigateUrl='<%# "AdminHobiGuncelle.aspx?ID="+Eval("ID") %>' ID="HyperLink1" runat="server" CssClass="btn btn-primary">Güncelle</asp:HyperLink>
                             </td>
                         </tr>
                         </tbody>
@@ -27,7 +27,7 @@
                 </asp:Repeater>
         </table>
         
-        <asp:HyperLink NavigateUrl="HobiEkle.aspx" ID="HyperLink3" runat="server" CssClass="btn btn-success">Ekle</asp:HyperLink>
+        <asp:HyperLink NavigateUrl="AdminHobiEkle.aspx" ID="HyperLink3" runat="server" CssClass="btn btn-success">Ekle</asp:HyperLink>
 
     </form>
 
