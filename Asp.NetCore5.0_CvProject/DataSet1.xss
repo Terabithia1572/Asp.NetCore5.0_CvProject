@@ -11,7 +11,7 @@
     <Shape ID="DesignTable:Tbl_Egitim" ZOrder="4" X="793" Y="146" Height="267" Width="300" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="140" />
     <Shape ID="DesignTable:Tbl_Hobilerim" ZOrder="2" X="627" Y="113" Height="151" Width="226" AdapterExpanded="true" DataTableExpanded="false" OldAdapterHeight="0" OldDataTableHeight="64" SplitterPosition="25" />
     <Shape ID="DesignTable:Tbl_Odullerim" ZOrder="7" X="281" Y="48" Height="115" Width="226" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="64" />
-    <Shape ID="DesignTable:Tbl_Konferanslar" ZOrder="1" X="181" Y="97" Height="153" Width="285" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="64" />
+    <Shape ID="DesignTable:Tbl_Konferanslar" ZOrder="1" X="181" Y="97" Height="172" Width="285" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="64" />
     <Shape ID="DesignTable:Tbl_Yeteneklerim" ZOrder="5" X="595" Y="72" Height="191" Width="245" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="64" />
   </Shapes>
   <Connectors />
