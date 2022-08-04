@@ -26,7 +26,7 @@
                 </asp:Repeater>
             </tbody>
         </table>
-        <asp:HyperLink NavigateUrl='<%# "AdminKonferanslarEkle.aspx" %>' ID="HyperLink1" runat="server" CssClass="btn btn-success">Ekle</asp:HyperLink>
+        <asp:HyperLink NavigateUrl="AdminKonferanslarEkle.aspx" ID="HyperLink1" runat="server" CssClass="btn btn-success">Ekle</asp:HyperLink>
     </form>
     
 </asp:Content>

@@ -343,6 +343,7 @@
     <Content Include="AdminHobiGuncelle.aspx" />
     <Content Include="AdminHobiSil.aspx" />
     <Content Include="AdminKonferanslar.aspx" />
+    <Content Include="AdminKonferanslarEkle.aspx" />
     <Content Include="AdminYetenekEkle.aspx" />
     <Content Include="AdminYetenekler.aspx" />
     <Content Include="Dosyalar\css\resume.css" />
@@ -1831,6 +1832,13 @@
     </Compile>
     <Compile Include="AdminKonferanslar.aspx.designer.cs">
       <DependentUpon>AdminKonferanslar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminKonferanslarEkle.aspx.cs">
+      <DependentUpon>AdminKonferanslarEkle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminKonferanslarEkle.aspx.designer.cs">
+      <DependentUpon>AdminKonferanslarEkle.aspx</DependentUpon>
     </Compile>
     <Compile Include="AdminYetenekEkle.aspx.cs">
       <DependentUpon>AdminYetenekEkle.aspx</DependentUpon>
