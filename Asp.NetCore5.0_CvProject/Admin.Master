@@ -52,13 +52,13 @@
                         </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="AdminHobilerim.aspx">
                         <i class="glyphicon glyphicon-play"></i>
                         Hobilerim
                         </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="AdminKonferanslar.aspx">
                         <i class="glyphicon glyphicon-send"></i>
                         Konferanslar
                         </a>
