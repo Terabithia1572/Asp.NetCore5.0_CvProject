@@ -11,7 +11,9 @@ namespace Asp.NetCore5._0_CvProject
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            DataSet1TableAdapters.Tbl_KonferanslarTableAdapter dt = new DataSet1TableAdapters.Tbl_KonferanslarTableAdapter();
+            Repeater1.DataSource = dt.KonferanslarListele();
+            Repeater1.DataBind();
         }
     }
 }

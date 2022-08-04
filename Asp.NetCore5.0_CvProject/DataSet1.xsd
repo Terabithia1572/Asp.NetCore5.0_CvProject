@@ -465,7 +465,16 @@ FROM            Tbl_Egitim</CommandText>
               <Mapping SourceColumn="ID" DataSetColumn="ID" />
               <Mapping SourceColumn="Konferanslar" DataSetColumn="Konferanslar" />
             </Mappings>
-            <Sources />
+            <Sources>
+              <DbSource ConnectionRef="db_BlogWebConnectionString (Web.config)" DbObjectName="db_BlogWeb.dbo.Tbl_Konferanslar" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillByKonferanslarListele" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="KonferanslarListele" GeneratorSourceName="FillByKonferanslarListele" GetMethodModifier="Public" GetMethodName="KonferanslarListele" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="KonferanslarListele" UserSourceName="FillByKonferanslarListele">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>select * from tbl_Konferanslar</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Tbl_YeteneklerimTableAdapter" GeneratorDataComponentClassName="Tbl_YeteneklerimTableAdapter" Name="Tbl_Yeteneklerim" UserDataComponentName="Tbl_YeteneklerimTableAdapter">
             <MainSource>
