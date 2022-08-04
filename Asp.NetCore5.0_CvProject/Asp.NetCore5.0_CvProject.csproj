@@ -1744,6 +1744,7 @@
     <Content Include="Dosyalar\vendor\jquery\jquery.slim.js" />
     <Content Include="Dosyalar\vendor\jquery\jquery.slim.min.js" />
     <Content Include="Hakkimda.aspx" />
+    <Content Include="HobiEkle.aspx" />
     <Content Include="Hobilerim.aspx" />
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
@@ -1837,6 +1838,13 @@
     </Compile>
     <Compile Include="Hakkimda.aspx.designer.cs">
       <DependentUpon>Hakkimda.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HobiEkle.aspx.cs">
+      <DependentUpon>HobiEkle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HobiEkle.aspx.designer.cs">
+      <DependentUpon>HobiEkle.aspx</DependentUpon>
     </Compile>
     <Compile Include="Hobilerim.aspx.cs">
       <DependentUpon>Hobilerim.aspx</DependentUpon>

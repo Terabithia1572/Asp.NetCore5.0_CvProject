@@ -27,7 +27,7 @@
                 </asp:Repeater>
         </table>
         
-        <asp:Button ID="btn_Ekle" runat="server" Text="Ekle" CssClass="btn btn-success" />
+        <asp:HyperLink NavigateUrl="HobiEkle.aspx" ID="HyperLink3" runat="server" CssClass="btn btn-success">Ekle</asp:HyperLink>
 
     </form>
 
