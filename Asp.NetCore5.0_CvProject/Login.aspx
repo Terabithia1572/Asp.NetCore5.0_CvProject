@@ -48,7 +48,7 @@
                             <div class="input-group-prepend">
                                 <span class="input-group-text"><i class="fas fa-key"></i></span>
                             </div>
-                            <asp:TextBox ID="TextBox2" runat="server" CssClass="form-control" placeholder="Şifre"></asp:TextBox>
+                            <asp:TextBox ID="TextBox2"  runat="server" CssClass="form-control" placeholder="Şifre" TextMode="Password"></asp:TextBox>
                             <%--<input type="password" class="form-control" placeholder="Şifre">--%>
                         </div>
                         <div class="row align-items-center remember">
@@ -57,7 +57,7 @@
                         </div>
                         <div class="form-group">
                             <%--<input type="submit" value="Login" class="btn float-right login_btn">--%>
-                            <asp:Button ID="btn_GirisYap" value="Login" runat="server" Text="Giriş Yap" class="btn float-right login_btn" />
+                            <asp:Button ID="btn_GirisYap" value="Login" runat="server" Text="Giriş Yap" class="btn float-right login_btn" OnClick="btn_GirisYap_Click" />
                         </div>
                     </form>
                 </div>
