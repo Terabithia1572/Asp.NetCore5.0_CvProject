@@ -56,13 +56,14 @@
 				
                         </div>
                         <div class="form-group">
-                            <input type="submit" value="Login" class="btn float-right login_btn">
+                            <%--<input type="submit" value="Login" class="btn float-right login_btn">--%>
+                            <asp:Button ID="btn_GirisYap" value="Login" runat="server" Text="Giriş Yap" class="btn float-right login_btn" />
                         </div>
                     </form>
                 </div>
                 <div class="card-footer">
                     <div class="d-flex justify-content-center links">
-                        Don't have an account?<a href="#">Kaydol</a>
+                        Hesabınız Yok mu?<a href="#">Kaydol</a>
                     </div>
                     <div class="d-flex justify-content-center">
                         <a href="#">Şifremi Unuttum?</a>
