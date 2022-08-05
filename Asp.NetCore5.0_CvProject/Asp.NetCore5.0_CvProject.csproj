@@ -1752,6 +1752,8 @@
     <Content Include="Hakkimda.aspx" />
     <Content Include="AdminHobiEkle.aspx" />
     <Content Include="AdminHobilerim.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="LoginCss.css" />
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
     <Content Include="AdminYeteneklerGuncelle.aspx" />
@@ -1903,6 +1905,13 @@
     </Compile>
     <Compile Include="AdminHobilerim.aspx.designer.cs">
       <DependentUpon>AdminHobilerim.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Admin.Master.cs">
