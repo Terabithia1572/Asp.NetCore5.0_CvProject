@@ -12,8 +12,9 @@
             <br />
             <div>
                 <asp:Label ID="Label2" runat="server" Text="Konferanslar"></asp:Label>
-                <asp:TextBox ID="tx_Konferanslar" runat="server"></asp:TextBox>
+                <asp:TextBox ID="tx_Konferanslar" runat="server" CssClass="form-control"></asp:TextBox>
             </div>
         </div>
+        <asp:Button ID="btn_Guncelle" runat="server" Text="Button" CssClass="btn btn-success" OnClick="btn_Guncelle_Click" />
     </form>
 </asp:Content>
