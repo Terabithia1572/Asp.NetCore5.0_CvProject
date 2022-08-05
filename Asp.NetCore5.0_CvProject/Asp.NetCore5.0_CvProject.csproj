@@ -344,6 +344,7 @@
     <Content Include="AdminHobiSil.aspx" />
     <Content Include="AdminKonferanslar.aspx" />
     <Content Include="AdminKonferanslarEkle.aspx" />
+    <Content Include="AdminKonferanslarGuncelle.aspx" />
     <Content Include="AdminKonferanslarSil.aspx" />
     <Content Include="AdminYetenekEkle.aspx" />
     <Content Include="AdminYetenekler.aspx" />
@@ -1840,6 +1841,13 @@
     </Compile>
     <Compile Include="AdminKonferanslarEkle.aspx.designer.cs">
       <DependentUpon>AdminKonferanslarEkle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminKonferanslarGuncelle.aspx.cs">
+      <DependentUpon>AdminKonferanslarGuncelle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminKonferanslarGuncelle.aspx.designer.cs">
+      <DependentUpon>AdminKonferanslarGuncelle.aspx</DependentUpon>
     </Compile>
     <Compile Include="AdminKonferanslarSil.aspx.cs">
       <DependentUpon>AdminKonferanslarSil.aspx</DependentUpon>
